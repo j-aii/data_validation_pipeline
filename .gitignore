@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environments
+env/
+evn2/
+.venv/
+venv/
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs
+outputs/
+logs/
+*.log
+
+# Models
+*.bin
+*.pt
+*.npy
+*.pkl
