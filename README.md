@@ -238,6 +238,16 @@ python stage4_ev_validate.py \
 
 # **Stage 5 — PII Detection & Anonymization (EV-Specific Presidio)**
 
+## **Prerequisite for Stage 5 – spaCy Model Installation**
+
+Before running PII detection:
+
+```bash
+pip install spacy
+python -m spacy download en_core_web_lg
+python -m spacy validate
+```
+
 Custom Presidio configuration detecting ONLY EV-relevant identifiers:
 
 ### **Detected Entities**
@@ -280,7 +290,7 @@ python pipeline/stage5_pii.py \
 
 # **Environment Setup**
 
-You are using **two environments**:
+We are using **two environments**:
 
 ### **env1 (dedup + cleanlab + embeddings)**
 
@@ -312,7 +322,23 @@ presidio-anonymizer
 spacy
 ```
 
+---
 
+### **spaCy Setup (Required for Stage 5 – PII Detection)**
+
+Presidio requires a spaCy NLP backend.
+
+Install spaCy:
+
+```bash
+pip install spacy
+```
+
+Download the large English model:
+
+```bash
+python -m spacy download en_core_web_lg
+```
 
 ---
 
@@ -348,5 +374,21 @@ outputs/
     stage4/
     stage5_pii/
 ```
+
+---
+
+# **To run**
+
+While in the ev_llm_pipeline directory
+
+```bash
+./run_pipeline.ps1
+```
+---
+
+
+
+
+
 
 
