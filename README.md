@@ -1,8 +1,4 @@
-# **EV LLM Data Validation Pipeline — README**
-
-A modular, multi-stage pipeline for validating, cleaning, deduplicating, scoring, and anonymizing datasets for EV (Electric Vehicle) domain LLM training.
-
-This pipeline is intentionally **defensive**, **domain-aware**, and designed for **production-grade dataset preparation**.
+# **EV LLM Data Validation Pipeline**
 
 ---
 
